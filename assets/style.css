@@ -1,3 +1,7 @@
+/* Extra space between TOS/Privacy Policy list items */
+#tos .cta ol > li, #privacy .cta ol > li {
+  margin-bottom: 1.2em;
+}
 /* Centered pricing details (no bullets) */
 .centered-pricing-details {
   display: flex;
