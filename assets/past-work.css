@@ -1,8 +1,32 @@
+ .portfolio-link {
+   color: #bfa76a;
+   text-decoration: underline;
+   font-size: 1.08rem;
+   margin-bottom: 0.2em;
+   text-align: center;
+   transition: color 0.2s;
+ }
+ 
+ .portfolio-link:hover, .portfolio-link:focus {
+   color: #000;
+ }
 body {
   background: #f5f1e6;
   font-family: 'Segoe UI', Arial, sans-serif;
   color: #222;
   margin: 0;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-family: 'Georgia', serif;
+  color: #222;
 }
 
 header {
@@ -12,18 +36,24 @@ header {
   border-bottom: 2px solid #e0d7c3;
 }
 
+nav {
+  margin: 1rem 0;
+}
+
 nav a {
   display: inline-block;
   background: #f6f0df;
   color: #8B6F28;
   padding: 0.5em 1.2em;
-  margin: 0 0.3em;
+  margin: 0 1.5rem;       
   border-radius: 2em;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 1.1rem;
   border: 2px solid #e2d2a7;
   transition: background 0.2s, color 0.2s, border 0.2s;
 }
+
 nav a:hover {
   background: #c6b175;
   color: #fff;
@@ -91,9 +121,14 @@ main {
 }
 
 .portfolio-card .portfolio-info {
-  background: rgba(0, 0, 0, 0.55);
+  background: #444;
   color: #fff;
-  padding: 1rem;
+  padding: 0.3rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 0 0 1em 1em;
+  position: absolute;
+  background: #444;
+  color: #fff;
+  padding: 0.5rem 0.7rem 0.7rem 0.7rem;
   border-radius: 0 0 1em 1em;
   position: absolute;
   left: 0;
@@ -104,12 +139,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-.portfolio-card .portfolio-info h3,
-.portfolio-card .portfolio-info p,
-.portfolio-card .portfolio-info a {
+  justify-content: flex-end;
+  height: 38%;
+  min-height: 110px;
+  max-height: 140px;
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
 }
