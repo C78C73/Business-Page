@@ -3,8 +3,46 @@ body.page-fade-out {
   opacity: 0;
   transition: opacity 0.35s cubic-bezier(.4,0,.2,1);
 }
+
+/* Base styles */
 body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f1e6;
+  color: #222;
+  min-height: 100vh;
+  position: relative;
   transition: opacity 0.35s cubic-bezier(.4,0,.2,1);
+}
+
+header {
+  background: #f5f1e6;
+  padding: 2rem 0;
+  text-align: center;
+  border-bottom: 2px solid #e0d7c3;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-family: 'Georgia', serif;
+  color: #222;
+}
+
+h2 {
+  color: #222;
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 
 nav {
@@ -39,6 +77,37 @@ a, a:visited {
 }
 a:hover, a:focus {
   color: #000;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.cta {
+  background: #bfa76a;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  margin: 2rem auto;
+  font-size: 1.3rem;
+  box-shadow: 0 2px 12px #e0d7c3;
+  transition: transform 0.2s;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta:hover {
+  transform: scale(1.03);
+}
+
+section {
+  margin-bottom: 2.5rem;
 }
 
 /* Centered section headings */
@@ -163,74 +232,4 @@ a:hover, a:focus {
   .footer-contact-col {
     align-items: flex-start;
   }
-}
-
-/* Base styles */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f5f1e6;
-  color: #222;
-  min-height: 100vh;
-  position: relative;
-}
-
-header {
-  background: #f5f1e6;
-  padding: 2rem 0 1rem 0;
-  text-align: center;
-  border-bottom: 2px solid #e0d7c3;
-}
-
-.logo {
-  width: 120px;
-  margin-bottom: 1rem;
-}
-
-h1 {
-  font-size: 2.5rem;
-  margin: 0;
-  font-family: 'Georgia', serif;
-  color: #222;
-}
-
-h2 {
-  color: #222;
-  font-size: 2rem;
-  margin-top: 2rem;
-}
-
-nav {
-  margin: 1rem 0;
-}
-
-main {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-.cta {
-  background: #bfa76a;
-  color: #fff;
-  padding: 1.5rem 2rem;
-  border-radius: 12px;
-  text-align: center;
-  margin: 2rem auto;
-  font-size: 1.3rem;
-  box-shadow: 0 2px 12px #e0d7c3;
-  transition: transform 0.2s;
-  max-width: 700px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.cta:hover {
-  transform: scale(1.03);
-}
-
-section {
-  margin-bottom: 2.5rem;
 }
