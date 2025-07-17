@@ -37,6 +37,19 @@ a:hover, a:focus {
   color: #000;
 }
 
+/* Extra space between TOS/Privacy Policy list items */
+#tos .cta ol > li {
+  margin-bottom: 1.2em;
+}
+
+/* Centered section headings */
+.centered-heading {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 /* Footer mimic styles */
 .site-footer-mimic {
   width: 100%;
@@ -221,27 +234,4 @@ main {
 
 section {
   margin-bottom: 2.5rem;
-}
-
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-}
-
-.feature {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px #e0d7c3;
-  padding: 1.5rem;
-  flex: 1 1 250px;
-  min-width: 220px;
-  max-width: 300px;
-  text-align: center;
-  transition: box-shadow 0.2s, transform 0.2s;
-}
-
-.feature:hover {
-  box-shadow: 0 4px 16px #bfa76a;
 }
