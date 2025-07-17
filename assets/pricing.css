@@ -119,6 +119,60 @@ section {
   width: 100%;
 }
 
+/* Pricing cards layout */
+.pricing-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+.pricing-card {
+  background: #f6f0df;
+  border: 2px solid #e2d2a7;
+  border-radius: 1.5em;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 2rem 2.2rem 1.5rem 2.2rem;
+  min-width: 220px;
+  max-width: 270px;
+  text-align: center;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+
+.pricing-card:hover {
+  box-shadow: 0 6px 24px rgba(139,111,40,0.13);
+  border: 2px solid #c6b175;
+}
+
+.pricing-title {
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  color: #8B6F28;
+}
+
+.pricing-price {
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 0.3em;
+  color: #000;
+}
+
+.pricing-onetime, .pricing-yearly {
+  font-size: 0.6em;
+  font-weight: 500;
+  color: #8B6F28;
+  margin-left: 0.2em;
+}
+
+.pricing-desc {
+  font-size: 1em;
+  color: #444;
+  margin-bottom: 0.2em;
+}
+
 /* Footer mimic styles */
 .site-footer-mimic {
   width: 100%;

@@ -6,53 +6,7 @@ body.page-fade-out {
 body {
   transition: opacity 0.35s cubic-bezier(.4,0,.2,1);
 }
-/* Pricing cards layout */
-.pricing-cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin: 2.5rem 0 1.5rem 0;
-}
-.pricing-card {
-  background: #f6f0df;
-  border: 2px solid #e2d2a7;
-  border-radius: 1.5em;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-  padding: 2rem 2.2rem 1.5rem 2.2rem;
-  min-width: 220px;
-  max-width: 270px;
-  text-align: center;
-  margin-bottom: 1rem;
-  transition: box-shadow 0.2s, border 0.2s;
-}
-.pricing-card:hover {
-  box-shadow: 0 6px 24px rgba(139,111,40,0.13);
-  border: 2px solid #c6b175;
-}
-.pricing-title {
-  font-size: 1.25em;
-  font-weight: 700;
-  margin-bottom: 0.5em;
-  color: #8B6F28;
-}
-.pricing-price {
-  font-size: 2em;
-  font-weight: 800;
-  margin-bottom: 0.3em;
-  color: #000;
-}
-.pricing-onetime, .pricing-yearly {
-  font-size: 0.6em;
-  font-weight: 500;
-  color: #8B6F28;
-  margin-left: 0.2em;
-}
-.pricing-desc {
-  font-size: 1em;
-  color: #444;
-  margin-bottom: 0.2em;
-}
+
 /* Rounded button style for nav links */
 nav a {
   display: inline-block;
@@ -72,6 +26,7 @@ nav a:hover, nav a:focus {
   color: #fff;
   border: 2px solid #c6b175;
 }
+
 /* Make all links brown and black on hover */
 a, a:visited {
   color: #8B6F28;
@@ -81,46 +36,7 @@ a, a:visited {
 a:hover, a:focus {
   color: #000;
 }
-/* Extra space between TOS/Privacy Policy list items */
-#tos .cta ol > li, #privacy .cta ol > li {
-  margin-bottom: 1.2em;
-}
-/* Centered pricing details (no bullets) */
-.centered-pricing-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.1em;
-  margin: 2rem auto 0 auto;
-  max-width: 600px;
-}
-.centered-pricing-details > div {
-  text-align: center;
-  width: 100%;
-}
-/* Centered bulleted list for pricing */
-.centered-list {
-  margin-left: auto !important;
-  margin-right: auto !important;
-  max-width: 600px;
-  padding-left: 0;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.centered-list li {
-  width: 100%;
-  text-align: left;
-  margin-left: 1.2em;
-}
-/* Centered section headings */
-.centered-heading {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
+
 /* Footer mimic styles */
 .site-footer-mimic {
   width: 100%;
@@ -236,6 +152,8 @@ a:hover, a:focus {
     align-items: flex-start;
   }
 }
+
+/* Base styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
@@ -243,14 +161,18 @@ body {
   color: #222;
   min-height: 100vh;
   position: relative;
-  /* Remove bottom padding so footer sits flush */
 }
 
 header {
   background: #f5f1e6;
-  padding: 2rem 0 1rem 0;
+  padding: 2rem 0;
   text-align: center;
   border-bottom: 2px solid #e0d7c3;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -273,19 +195,6 @@ h2 {
 
 nav {
   margin: 1rem 0;
-}
-
-nav a {
-  color: #222;
-  text-decoration: none;
-  margin: 0 1.5rem;
-  font-weight: 500;
-  font-size: 1.1rem;
-  transition: color 0.2s;
-}
-
-nav a:hover {
-  color: #bfa76a;
 }
 
 main {
@@ -340,118 +249,4 @@ section {
 
 .feature:hover {
   box-shadow: 0 4px 16px #bfa76a;
-}
-
-/* Footer Styles */
-.site-footer {
-  width: 100%;
-  background: #222;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 2rem;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  z-index: 100;
-  box-shadow: 0 -2px 12px rgba(0,0,0,0.07);
-}
-.footer-logo {
-  width: 60px;
-  height: auto;
-  display: block;
-}
-.footer-center {
-  display: flex;
-  gap: 2rem;
-}
-.footer-center a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.1rem;
-  transition: color 0.2s;
-}
-.footer-center a:hover {
-  color: #bfa76a;
-}
-.footer-right {
-  display: flex;
-  align-items: center;
-}
-.footer-contact-btn {
-  background: #bfa76a;
-  color: #222;
-  padding: 0.7rem 1.5rem;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: background 0.2s, color 0.2s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-}
-.footer-contact-btn:hover {
-  background: #fff;
-  color: #bfa76a;
-}
-.footer-copyright {
-  width: 100%;
-  text-align: left;
-  font-size: 1rem;
-  color: #ccc;
-  background: none;
-  margin: 1.5rem 0 0 0;
-  padding: 0;
-  border: none;
-}
-
-@media (max-width: 700px) {
-  .site-footer {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1.2rem 1rem;
-    gap: 1rem;
-  }
-  .footer-center {
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  .footer-right {
-    width: 100%;
-    justify-content: flex-end;
-  }
-}
-form {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px #e0d7c3;
-  max-width: 400px;
-  margin: 2rem auto;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 0.7rem;
-  margin-bottom: 1rem;
-  border: 1px solid #bfa76a;
-  border-radius: 6px;
-  font-size: 1rem;
-  background: #f5f1e6;
-}
-
-button {
-  background: #bfa76a;
-  color: #fff;
-  border: none;
-  padding: 0.8rem 2rem;
-  border-radius: 6px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-button:hover {
-  background: #a88d4a;
 }
