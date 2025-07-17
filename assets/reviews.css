@@ -4,6 +4,7 @@ body.page-fade-out {
   transition: opacity 0.35s cubic-bezier(.4,0,.2,1);
 }
 
+/* Base styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
@@ -62,7 +63,6 @@ nav a {
   box-shadow: none;
   transition: background 0.2s, color 0.2s, border 0.2s;
 }
-
 nav a:hover, nav a:focus {
   background: #c6b175;
   color: #fff;
@@ -75,7 +75,6 @@ a, a:visited {
   text-decoration: underline;
   transition: color 0.2s;
 }
-
 a:hover, a:focus {
   color: #000;
 }
@@ -136,23 +135,19 @@ section {
   gap: 2vw;
   min-height: 0;
 }
-
 .footer-col {
   display: flex;
   flex-direction: column;
   min-width: 140px;
 }
-
 .footer-logo-col {
   align-items: flex-start;
   min-width: 180px;
 }
-
 .footer-logo-img {
   width: 90px;
   margin-bottom: 0.5em;
 }
-
 .footer-logo-title {
   font-family: 'Georgia', serif;
   font-size: 1.2em;
@@ -162,7 +157,6 @@ section {
   opacity: 0.95;
   margin-top: 0.2em;
 }
-
 .footer-heading {
   font-weight: bold;
   font-size: 1.15em;
@@ -170,13 +164,11 @@ section {
   margin-bottom: 0.7em;
   color: #fff;
 }
-
 .footer-col ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .footer-col ul li {
   margin: 0.3em 0;
   font-size: 1.15em;
@@ -185,35 +177,29 @@ section {
   display: flex;
   align-items: center;
 }
-
 .footer-col ul li::before {
   content: '\203A';
   color: #bfa76a;
   margin-right: 0.6em;
   font-size: 1.1em;
 }
-
 .footer-col ul li a {
   color: #fff;
   text-decoration: none;
   transition: color 0.2s;
 }
-
 .footer-col ul li a:hover {
   color: #bfa76a;
 }
-
 .footer-contact-col {
   align-items: flex-end;
   min-width: 140px;
 }
-
 .footer-contact-icons {
   display: flex;
   gap: 1.1em;
   margin-top: 0.5em;
 }
-
 .footer-contact-icons a {
   display: inline-block;
   background: #444;
@@ -221,28 +207,14 @@ section {
   padding: 0.3em 0.4em;
   transition: background 0.2s;
 }
-
 .footer-contact-icons a:hover {
   background: #bfa76a;
 }
-
 .footer-contact-icons img {
   width: 28px;
   height: 28px;
   vertical-align: middle;
 }
-
-.footer-copyright {
-  width: 100%;
-  text-align: left;
-  font-size: 1rem;
-  color: #ccc;
-  background: none;
-  margin: 1.5rem 0 0 0;
-  padding: 0;
-  border: none;
-}
-
 @media (max-width: 900px) {
   .site-footer-mimic {
     flex-wrap: wrap;
@@ -250,7 +222,6 @@ section {
     padding: 2rem 2vw 1.5rem 2vw;
   }
 }
-
 @media (max-width: 600px) {
   .site-footer-mimic {
     flex-direction: column;

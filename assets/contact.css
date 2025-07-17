@@ -119,6 +119,41 @@ section {
   width: 100%;
 }
 
+/* Form styles */
+form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #e0d7c3;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #bfa76a;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f5f1e6;
+}
+
+button {
+  background: #bfa76a;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #a88d4a;
+}
+
 /* Footer mimic styles */
 .site-footer-mimic {
   width: 100%;
